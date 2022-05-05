@@ -51,6 +51,13 @@ ul {
   list-style: none;
 }
 
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
 /* Typography */
 
 h1 {
@@ -118,4 +125,28 @@ p {
 .navbar__menu__item:hover {
   color: var(--color-orange);
   background-color: var(--color-dark-grey);
+}
+
+/* home */
+#home {
+  background-color: var(--color-white);
+  text-align: center;
+  padding: 40px;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-dark-grey);
+}
+
+.home__contact {
+  color: var(--color-black);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-black);
+  border-radius: var(--border-radius);
 }
