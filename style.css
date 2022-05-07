@@ -128,6 +128,19 @@ p {
   background-color: var(--color-blue);
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: 32px;
+  font-size: var(--font-medium);
+  display: none;
+  transition: all var(--animation-duration) ease;
+}
+
+.navbar__toggle-btn:hover {
+  color: var(--color-orange);
+}
+
 /* home */
 #home {
   background-image: url('/imgs/background.jpg');
@@ -346,4 +359,40 @@ p {
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-orange);
+}
+
+@media screen and (max-width:768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 8px 16px 8px;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .navbar__menu__item {
+    width: 100%;
+  }
+
+  .about__stacks {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stack {
+    margin-bottom: 38px;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
 }
