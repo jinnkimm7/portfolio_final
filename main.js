@@ -11,3 +11,15 @@ document.addEventListener('scroll', () => {
   }
 })
 
+// scroll to section
+const navbarMenu = document.querySelector('.navbar__menu');
+navbarMenu.addEventListener('click', (e) => {
+  const target = e.target;
+  const link = target.dataset.link;
+  if (link === null) {
+    return;
+  } else {
+    const scrollTo = document.querySelector(`${link}`);
+    scrollTo.scrollIntoView({ behavior: 'smooth' });
+  }
+})

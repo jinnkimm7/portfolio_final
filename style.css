@@ -89,6 +89,7 @@ p {
   margin: 4px 0;
 }
 
+
 /* navbar */
 #navbar {
   display: flex;
@@ -99,7 +100,7 @@ p {
   position: fixed;
   width: 100%;
   transition: all var(--animation-duration) ease-in-out;
-
+  z-index: 100;
 }
 
 #navbar.navbar--dark {
