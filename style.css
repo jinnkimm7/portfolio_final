@@ -176,6 +176,12 @@ p {
   border-radius: var(--border-radius);
 }
 
+.home__contact:hover {
+  background-color: var(--color-blue);
+  border: 1px solid var(--color-black);
+  color: var(--color-orange);
+}
+
 /* section common */
 .section {
   padding: 50px;
