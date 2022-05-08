@@ -96,6 +96,14 @@ p {
   align-items: center;
   padding: 16px;
   color: var(--color-black);
+  position: fixed;
+  width: 100%;
+}
+
+#navbar.navbar--blue {
+  background-color: var(--color-blue);
+  padding: 8px;
+  transition: all var(--animation-duration) ease-in-out;
 }
 
 .navbar__logo {
@@ -148,6 +156,7 @@ p {
   background-repeat: no-repeat;
   text-align: center;
   padding: 40px;
+  padding-top: 120px;
 }
 
 .home__avatar {
