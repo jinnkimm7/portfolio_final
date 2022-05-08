@@ -98,12 +98,13 @@ p {
   color: var(--color-black);
   position: fixed;
   width: 100%;
+  transition: all var(--animation-duration) ease-in-out;
+
 }
 
 #navbar.navbar--dark {
   background-color: rgba(235, 235, 235, 0.8);
   padding: 8px;
-  transition: all var(--animation-duration) ease-in-out;
 }
 
 .navbar__logo {
@@ -174,6 +175,7 @@ p {
   padding: 8px 12px;
   border: 2px solid var(--color-black);
   border-radius: var(--border-radius);
+  transition: all var(--animation-duration) ease;
 }
 
 .home__contact:hover {
