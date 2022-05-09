@@ -1,6 +1,6 @@
 'use strict';
 
-// make navbar blue when scrolled
+// make navbar dark when scrolled
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.clientHeight;
 document.addEventListener('scroll', () => {
@@ -19,7 +19,17 @@ navbarMenu.addEventListener('click', (e) => {
   if (link === null) {
     return;
   } else {
-    const scrollTo = document.querySelector(`${link}`);
-    scrollTo.scrollIntoView({ behavior: 'smooth' });
+    scrollIntoView(link);
   }
 })
+
+// handle click on 'contact me' button on home
+const homeContactBtn = document.querySelector('.home__contact');
+homeContactBtn.addEventListener('click', () => {
+  scrollIntoView('#contact');
+})
+
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({ behavior: 'smooth' });
+}
