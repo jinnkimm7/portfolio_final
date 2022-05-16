@@ -153,7 +153,7 @@ p {
 
 /* home */
 #home {
-  background-image: url('/imgs/background.jpg');
+  background-image: url('./imgs/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
